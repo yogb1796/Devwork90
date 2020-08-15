@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+</head>
+	<body>
+		<div class="container">
+			<form enctype="multipart/form-data" method="post">
+			{% csrf_token %}
+	        {{ form.as_p }}
+	        <button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</body>
+</html>
+
